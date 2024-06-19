@@ -16,8 +16,8 @@ const Index = () => {
         <Box boxSize="sm">
           <Image src="/images/event-management.png" alt="Event Management" />
         </Box>
-        <Button leftIcon={<FaCalendarAlt />} colorScheme="teal" size="lg">
-          View Events
+        <Button leftIcon={<FaCalendarAlt />} colorScheme="teal" size="lg" onClick={() => navigate("/book-ticket")}>
+          Book Tickets
         </Button>
         <Button leftIcon={<FaPlusCircle />} colorScheme="blue" size="lg" onClick={() => navigate("/create-event")}>
           Create New Event
