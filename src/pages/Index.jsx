@@ -1,5 +1,6 @@
 import { Container, VStack, Heading, Text, Button, Box, Image } from "@chakra-ui/react";
 import { FaCalendarAlt, FaPlusCircle } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Index = () => {
   return (
@@ -17,9 +18,11 @@ const Index = () => {
         <Button leftIcon={<FaCalendarAlt />} colorScheme="teal" size="lg">
           View Events
         </Button>
-        <Button leftIcon={<FaPlusCircle />} colorScheme="blue" size="lg">
-          Create New Event
-        </Button>
+        <Link to="/create-event">
+          <Button leftIcon={<FaPlusCircle />} colorScheme="blue" size="lg">
+            Create New Event
+          </Button>
+        </Link>
       </VStack>
     </Container>
   );
